@@ -1,0 +1,12 @@
+# Первым делом объявляется машинное имя роута. Оно составляетсям из:
+# название_модуля.машинное_название_роута.
+
+
+custmod.form:
+  path: '/cust'
+  defaults:
+    _title:  Form API .'
+    # Подгружаем форму по неймспейсу.
+    _form: '\Drupal\custmod\Form\CustModForm'
+  requirements:
+    _permission: 'access content'
